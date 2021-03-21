@@ -1,0 +1,17 @@
+{
+  "name": "admin/phpmvc-framework",
+  "authors": [
+    {
+      "name": "titus njiru",
+      "email": "njirutitus@gmail.com"
+    }
+  ],
+  "autoload": {
+    "psr-4": {
+      "app\\": "./"
+    }
+  },
+  "require": {
+    "twbs/bootstrap": "5.0.0-beta2"
+  }
+}
