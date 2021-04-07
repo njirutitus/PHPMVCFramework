@@ -1,7 +1,7 @@
 <?php
 
 
-namespace app\core;
+namespace app\core\db;
 
 
 abstract class Model

@@ -5,7 +5,7 @@ namespace app\models;
 
 
 use app\core\Application;
-use app\core\Model;
+use app\core\db\Model;
 
 class LoginForm extends Model
 {

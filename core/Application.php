@@ -1,6 +1,8 @@
 <?php
 
 namespace app\core;
+use app\core\db\Database;
+
 /**
  * Application File Doc Comment
  * 
@@ -21,7 +23,7 @@ class Application
     public Response $response;
     public Session $session;
     public Database $db;
-    public ?DbModel $user;
+    public ?UserModel $user;
     public View $view;
 
 

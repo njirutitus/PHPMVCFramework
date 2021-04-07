@@ -4,6 +4,8 @@
 namespace app\core;
 
 
+use app\core\db\Model;
+
 abstract class DbModel extends Model
 {
     abstract public function tableName(): string;

@@ -4,7 +4,7 @@
 namespace app\models;
 
 
-use app\core\Model;
+use app\core\db\Model;
 
 class ContactForm extends Model
 {
