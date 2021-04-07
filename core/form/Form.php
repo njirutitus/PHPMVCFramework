@@ -8,7 +8,7 @@ use app\core\db\Model;
 
 class Form
 {
-    public static function begin($action, $method)
+    public static function begin($action, $method): Form
     {
         echo sprintf('<form action="%s" method="%s">',$action, $method);
         return new Form();

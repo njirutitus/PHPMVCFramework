@@ -59,8 +59,9 @@
         <?php echo \app\core\Application::$app->session->getFlash('success'); ?>
     </div>
     <?php endif; ?>
+    {{content}}
 </div>
-{{content}}
+
 
 
 <!-- Option 1: Bootstrap Bundle with Popper -->

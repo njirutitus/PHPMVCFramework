@@ -1,6 +1,9 @@
 <?php
-/** @var $model \app\models\User */
+/** @var $model User */
 
+use app\models\User;
+
+$this->title = 'Log In';
 ?>
 <div class="container">
     <div class="row">
