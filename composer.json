@@ -12,6 +12,8 @@
     }
   },
   "require": {
-    "twbs/bootstrap": "5.0.0-beta2"
+    "twbs/bootstrap": "5.0.0-beta2",
+    "vlucas/phpdotenv": "^5.3",
+    "ext-pdo": "*"
   }
 }

@@ -1,25 +1,14 @@
 <?php
-
+/** @var $this \app\core\View */
+/** @var $model \app\models\ContactForm */
 ?>
 <div class="container">
-    <div class="row">
-        <div class="col-sm-6 m-auto p-3 border mt-2 shadow">
             <h3 class="text-center">Contact Us</h3>
-            <form action="" method="post">
-                <div class="from-group mb-3">
-                    <label for="subject">Subject</label>
-                    <input name="subject" id="subject" type="text" class="form-control">
-                </div>
-                <div class="from-group mb-3">
-                    <label for="email">Email</label>
-                    <input type="email"  id="email" name="email" class="form-control">
-                </div>
-                <div class="from-group mb-3">
-                    <label for="message">Message</label>
-                    <textarea id="message" name="message" cols="30" rows="5" class="form-control"></textarea>
-                </div>
-                <input type="submit" value="send" class="btn btn-primary" name="submit">
-            </form>
-        </div>
-    </div>
+            <?php $form = \app\core\form\Form::begin('','post')?>
+            <?php echo $form->field($model,'subject') ?>
+            <?php echo $form->field($model,'email') ?>
+            <?php echo $form->field($model,'body') ?>
+
+             <input type="submit" value="send" class="btn btn-primary" name="submit">
+            <?php echo \app\core\form\Form::end()?>
 </div>
