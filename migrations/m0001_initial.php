@@ -4,7 +4,7 @@ class m0001_initial
 {
     public function up()
     {
-        $db = \app\core\Application::$app->db;
+        $db = \tn\phpmvc\Application::$app->db;
         $SQL = "CREATE TABLE IF NOT EXISTS `user` (
         `id` SERIAL,
         `firstname` tinytext NOT NULL,
@@ -19,7 +19,7 @@ class m0001_initial
 
     public function down()
     {
-        $db = \app\core\Application::$app->db;
+        $db = \tn\phpmvc\Application::$app->db;
         $SQL = "DROP TABLE IF EXISTS `user`";
         $db->pdo->exec($SQL);
     }

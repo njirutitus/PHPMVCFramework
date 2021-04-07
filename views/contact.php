@@ -2,9 +2,9 @@
 /** @var $this View */
 /** @var $model ContactForm */
 
-use app\core\form\Form;
-use app\core\form\TextareaField;
-use app\core\View;
+use tn\phpmvc\form\Form;
+use tn\phpmvc\form\TextareaField;
+use tn\phpmvc\View;
 use app\models\ContactForm;
 
 $this->title = "Contact";

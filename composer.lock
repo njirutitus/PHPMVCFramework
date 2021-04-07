@@ -4,7 +4,7 @@
         "Read more about it at https://getcomposer.org/doc/01-basic-usage.md#installing-dependencies",
         "This file is @generated automatically"
     ],
-    "content-hash": "d2f84ab916361de8da0ce7bdcc3af833",
+    "content-hash": "726789125038acd6d213e7809e84ad8e",
     "packages": [
         {
             "name": "graham-campbell/result-type",
@@ -384,6 +384,39 @@
             "time": "2021-01-07T16:49:33+00:00"
         },
         {
+            "name": "tn/php-mvc-core",
+            "version": "v1.0.3",
+            "source": {
+                "type": "git",
+                "url": "https://github.com/njirutitus/tn-php-mvc-framework.git",
+                "reference": "00f581450122c658d69f251f2f66377a47e81cdd"
+            },
+            "dist": {
+                "type": "zip",
+                "url": "https://api.github.com/repos/njirutitus/tn-php-mvc-framework/zipball/00f581450122c658d69f251f2f66377a47e81cdd",
+                "reference": "00f581450122c658d69f251f2f66377a47e81cdd",
+                "shasum": ""
+            },
+            "type": "library",
+            "autoload": {
+                "psr-4": {
+                    "tn\\phpmvc\\": "./"
+                }
+            },
+            "notification-url": "https://packagist.org/downloads/",
+            "authors": [
+                {
+                    "name": "titus njiru",
+                    "email": "njirutitus@gmail.com"
+                }
+            ],
+            "support": {
+                "issues": "https://github.com/njirutitus/tn-php-mvc-framework/issues",
+                "source": "https://github.com/njirutitus/tn-php-mvc-framework/tree/v1.0.3"
+            },
+            "time": "2021-04-07T20:38:03+00:00"
+        },
+        {
             "name": "twbs/bootstrap",
             "version": "v5.0.0-beta2",
             "source": {
@@ -528,7 +561,9 @@
     },
     "prefer-stable": false,
     "prefer-lowest": false,
-    "platform": [],
+    "platform": {
+        "ext-pdo": "*"
+    },
     "platform-dev": [],
     "plugin-api-version": "2.0.0"
 }

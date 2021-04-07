@@ -29,7 +29,7 @@
                     <a class="nav-link" href="/contact">contact</a>
                 </li>
             </ul>
-            <?php  if (\app\core\Application::isGuest()): ?>
+            <?php  if (\tn\phpmvc\Application::isGuest()): ?>
             <ul class="navbar-nav ms-auto mb-2 mb-lg-0">
                 <li class="nav-item">
                     <a class="nav-link" href="/register">Register</a>
@@ -44,7 +44,7 @@
                     <a class="nav-link" href="/profile">Profile</a>
                 </li>
                 <li class="nav-item">
-                    <a class="nav-link" href="/logout">Welcome <?php echo \app\core\Application::$app->user->getDisplayName(); ?>
+                    <a class="nav-link" href="/logout">Welcome <?php echo \tn\phpmvc\Application::$app->user->getDisplayName(); ?>
                     (Logout)
                     </a>
                 </li>
@@ -54,9 +54,9 @@
     </div>
 </nav>
 <div class="container">
-    <?php if (\app\core\Application::$app->session->getFlash('success')): ?>
+    <?php if (\tn\phpmvc\Application::$app->session->getFlash('success')): ?>
     <div class="alert alert-success">
-        <?php echo \app\core\Application::$app->session->getFlash('success'); ?>
+        <?php echo \tn\phpmvc\Application::$app->session->getFlash('success'); ?>
     </div>
     <?php endif; ?>
     {{content}}

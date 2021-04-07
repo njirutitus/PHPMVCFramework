@@ -4,9 +4,9 @@
 namespace app\models;
 
 
-use app\core\DbModel;
-use app\core\Model;
-use app\core\UserModel;
+use tn\phpmvc\DbModel;
+use tn\phpmvc\Model;
+use tn\phpmvc\UserModel;
 
 class User extends UserModel
 {

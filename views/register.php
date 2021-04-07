@@ -6,7 +6,7 @@
     <div class="row">
         <div class="col-sm-6 m-auto p-3 border mt-2 shadow">
             <h3 class="text-center">Create an Account</h3>
-            <?php $form = app\core\form\Form::begin("","post") ?>
+            <?php $form = tn\phpmvc\form\Form::begin("","post") ?>
             <div class="row">
                 <div class="col"><?php echo $form->field($model,'firstname') ?></div>
                 <div class="col"><?php echo $form->field($model,'lastname') ?></div>
@@ -15,7 +15,7 @@
             <?php echo $form->field($model,'password')->passwordField() ?>
             <?php echo $form->field($model,'confirmPassword')->passwordField() ?>
             <input type="submit" value="Submit" class="btn btn-primary" name="submit">
-            <?php echo app\core\form\Form::end(); ?>
+            <?php echo tn\phpmvc\form\Form::end(); ?>
 <!--            <form action="" method="post">-->
 <!--                <div class="row">-->
 <!--                    <div class="col">-->

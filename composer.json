@@ -1,5 +1,6 @@
 {
   "name": "admin/phpmvc-framework",
+  "description": "",
   "authors": [
     {
       "name": "titus njiru",
@@ -14,6 +15,7 @@
   "require": {
     "twbs/bootstrap": "5.0.0-beta2",
     "vlucas/phpdotenv": "^5.3",
-    "ext-pdo": "*"
+    "ext-pdo": "*",
+    "tn/php-mvc-core": "v1.0.3"
   }
 }
