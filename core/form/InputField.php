@@ -6,15 +6,14 @@ namespace app\core\form;
 
 use app\core\Model;
 
-class Field extends BaseField
+class InputField extends BaseField
 {
     public const TYPE_TEXT = 'text';
     public const TYPE_PASSWORD= 'password';
     public const TYPE_ = 'email';
 
     public string $type;
-    public Model $model;
-    public string $attribute;
+
 
     /**
      * Field constructor.
@@ -24,8 +23,7 @@ class Field extends BaseField
     public function __construct(Model $model, string $attribute)
     {
         $this->type = self::TYPE_TEXT;
-        $this->model = $model;
-        $this->attribute = $attribute;
+        parent::__construct($model,$attribute);
     }
 
 
