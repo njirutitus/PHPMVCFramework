@@ -16,4 +16,4 @@ For a cleaner commit history checkout out [https://github.com/thecodeholic/php-m
 1. Open in the browser http://127.0.0.1:8080
 
 
-> The project was created along with Youtube Video Series "[Build PHP MVC Framework](https://www.youtube.com/playlist?list=PLLQuc_7jk__Uk_QnJMPndbdKECcTEwTA1)".
+> The project was created by following the Youtube Video Series "[Build PHP MVC Framework](https://www.youtube.com/playlist?list=PLLQuc_7jk__Uk_QnJMPndbdKECcTEwTA1)".
