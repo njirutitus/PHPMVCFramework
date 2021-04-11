@@ -2,10 +2,6 @@
 
 For a cleaner commit history checkout out [https://github.com/thecodeholic/php-mvc-framework](https://github.com/thecodeholic/php-mvc-framework) 
 
-## NOT READY FOR PRODUCTION
-
-----
-
 ## Installation
 
 1. Download the archive or clone the project using git
