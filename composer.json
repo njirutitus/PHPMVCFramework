@@ -16,6 +16,6 @@
     "twbs/bootstrap": "5.0.0-beta2",
     "vlucas/phpdotenv": "^5.3",
     "ext-pdo": "*",
-    "tn/php-mvc-core": "v1.0.10"
+    "tn/php-mvc-core": "1.0.10"
   }
 }
