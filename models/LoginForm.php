@@ -5,7 +5,7 @@ namespace app\models;
 
 
 use tn\phpmvc\Application;
-use tn\phpmvc\db\Model;
+use tn\phpmvc\Model;
 
 class LoginForm extends Model
 {
