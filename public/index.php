@@ -7,14 +7,31 @@ use app\controllers\AuthController;
 
 require_once __DIR__ . '/../vendor/autoload.php';
 $dotenv = Dotenv\Dotenv::createImmutable(dirname(__DIR__));
-$dotenv->load();
+$dotenv->safeLoad();
+
+if (!getenv('DB_DSN')) {
+    putenv("DB_DSN=$_ENV[DB_DSN]");
+    putenv("DB_USER=$_ENV[DB_USER]");
+    putenv("DB_PASSWORD=$_ENV[DB_PASSWORD]");
+    putenv("MAIL_HOST=$_ENV[MAIL_HOST]");
+    putenv("MAIL_USERNAME=$_ENV[MAIL_USERNAME]");
+    putenv("MAIL_PASSWORD=$_ENV[MAIL_PASSWORD]");
+    putenv("MAIL_PORT=$_ENV[MAIL_PORT]");
+
+}
 
 $config = [
     'userClass' => \app\models\User::class,
     'db' => [
-        'dsn' => $_ENV['DB_DSN'],
-        'user' => $_ENV['DB_USER'],
-        'password' => $_ENV['DB_PASSWORD']
+        'dsn' => getenv('DB_DSN'),
+        'user' => getenv('DB_USER'),
+        'password' => getenv('DB_PASSWORD')
+    ],
+    'mail' => [
+        'host' => getenv('MAIL_HOST'),
+        'username' => getenv('MAIL_USERNAME'),
+        'password' => getenv('MAIL_PASSWORD'),
+        'port' => getenv('MAIL_PORT'),
     ]
 ];
 
@@ -31,4 +48,3 @@ $app->router->get('/logout',[AuthController::class,'logout']);
 $app->router->get('/profile',[AuthController::class,'profile']);
 
 $app->run();
-
